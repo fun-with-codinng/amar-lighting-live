@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Amar Lighting Equipment - Portable Lighting Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="portable lighting, lighting towers, mobile lighting, industrial lighting, construction lighting" name="keywords">
+    <meta content="Amar Lighting Equipment provides portable lighting solutions for construction sites, mining sites, oil & gas industry, military and defense, emergency relief, and events." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Custom CSS overrides -->
+    <style>
+        :root {
+            --primary: #f32e36; /* Orange from Amar's branding */
+            --secondary: #5F656F;
+            --light: #F5F5F5;
+            --dark: #02245B; /* Navy from Amar's branding */
+        }
+        
+        /* Product Category Card Styles */
+        .product-category-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 350px; /* Increased height */
+        }
+        
+        .product-category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .product-category-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Changed to contain */
+            transition: all 0.5s ease;
+        }
+        
+        .product-category-card:hover img {
+            transform: scale(1.05);
+        }
+        
+        .product-category-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: white;
+        }
+        
+        .product-category-content h4 {
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .product-category-content p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        /* Featured Products Slider */
+        .featured-product-item {
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .featured-product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .featured-product-img {
+            height: 300px; /* Increased height */
+            overflow: hidden;
+            background-color: #f9f9f9;
+            padding: 15px;
+        }
+        
+        .featured-product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Changed to contain */
+            transition: transform 0.5s ease;
+        }
+        
+        .featured-product-item:hover .featured-product-img img {
+            transform: scale(1.05);
+        }
+        
+        .featured-product-info {
+            padding: 20px;
+            background: white;
+        }
+        
+        .featured-product-info h5 {
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .featured-product-info .model {
+            color: var(--primary);
+            font-size: 14px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .featured-product-info p {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-white">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 topbar-right d-inline-flex align-items-center text-white py-2 px-5">
+                    <span class="fs-5 fw-bold me-2"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <span class="fs-5 fw-bold">+91 8650540118 | +91 9634481386</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+        <a href="index.html" class="navbar-brand ps-4 me-0" style="background-color: white;">
+            <img src="img/logo.png" alt="Amar Lighting" height="70">
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                
+                <!-- Products Dropdown -->
+                <div class="nav-item dropdown amar-dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu amar-dropdown-menu bg-light m-0 flex-column flex-lg-row">
+                        <div class="row w-100">
+                            <div class="col-lg-3 amar-dropdown-column">
+                                <a href="tower-light-category.html" class="amar-category-header">Tower Light</a>
+                                <a href="product-detail-pelican-rals.html" class="amar-dropdown-item">Pelican Remote Area Lighting System</a>
+                                <a href="product-detail-9mtr-tower-without-genset.html" class="amar-dropdown-item">9 Mtr. Tower Without Genset</a>
+                            </div>
+                            <div class="col-lg-3 amar-dropdown-column">
+                                <a href="mobile-lights-category.html" class="amar-category-header">Mobile Light Towers</a>
+                                <a href="product-detail-solar-mobile-lighting-tower.html" class="amar-dropdown-item">Solar Mobile Lighting Tower</a>
+                                <a href="product-detail-4mtr-mobile-lighting-tower.html" class="amar-dropdown-item">4 Mtr. Mobile Lighting Tower</a>
+                                <a href="product-detail-5mtr-mobile-lighting-tower.html" class="amar-dropdown-item">5 Mtr. Mobile Lighting Tower</a>
+                                <a href="product-detail-9mtr-mobile-lighting-tower.html" class="amar-dropdown-item">9 Mtr. Mobile Lighting Tower</a>
+                            </div>
+                            <div class="col-lg-3 amar-dropdown-column">
+                                <a href="inflatable-tower-light-category.html" class="amar-category-header">Inflatable Tower Light</a>
+                                <a href="product-detail-inflatable-balloon-tower-light.html" class="amar-dropdown-item">Inflatable Balloon Tower Light</a>
+                                <a href="product-detail-portable-inflatable-emergency-lighting.html" class="amar-dropdown-item">Portable Inflatable Emergency Lighting</a>
+                            </div>
+                            <div class="col-lg-3 amar-dropdown-column">
+                                <a href="solar-lights-category.html" class="amar-category-header">Solar Lights</a>
+                                <a href="product-detail-portable-pneumatic-lighting-system.html" class="amar-dropdown-item">Portable Pneumatic Lighting System</a>
+                                <a href="product-detail-solar-mobile-lighting-tower.html" class="amar-dropdown-item">Solar Mobile Lighting Tower</a>
+                            </div>
+                            <div class="col-12 amar-view-all-container">
+                                <a href="products.html" class="amar-view-all">View All Products <i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="contact.html#quote" class="btn btn-primary px-3 d-none d-lg-block">Get A Quote</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/3.png" alt="Portable Lighting Solutions">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">ISO 9001-2000 Certified Company</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Portable Lighting Solutions Provider</h1>
+                                    <a href="products.html" class="btn btn-primary py-3 px-5 animated slideInRight">Explore Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/6.png" alt="Lighting Towers">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-start">
+                                    <p class="fs-5 fw-medium text-primary text-uppercase animated slideInRight">Manufacturing, Sales, Service, Spares & Rental</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Reliable Lighting Solutions For Every Need</h1>
+                                    <a href="contact.html" class="btn btn-primary py-3 px-5 animated slideInRight">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row gx-3 h-100">
+                        <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="img/about-1.jpg">
+                        </div>
+                        <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="img/about-2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="fw-medium text-uppercase text-primary mb-2">About Us</p>
+                    <h1 class="display-5 mb-4">Manufacturers of Quality Portable Lighting Equipment</h1>
+                    <p class="mb-4">We are the manufacturers of Portable Lighting Equipment which are very widely used in Military & Construction areas. We are known for our quality as we use only branded components in our machines.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="flex-shrink-0 bg-primary p-4">
+                            <h1 class="display-2">ISO</h1>
+                            <h5 class="text-white">9001-2000</h5>
+                            <h5 class="text-white">Certified</h5>
+                        </div>
+                        <div class="ms-4">
+                            <p><i class="fa fa-check text-primary me-2"></i>Manufacturing</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Sales</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Service</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Spares</p>
+                            <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Rental</p>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-envelope-open text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2">Email us</p>
+                                    <h5 class="mb-0">amarlightingequipments@gmail.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-phone-alt text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2">Call us</p>
+                                    <h5 class="mb-0">+91 8650540118</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 p-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">15</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Years Experience</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">50</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Team Members</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">250</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Happy Clients</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">500</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Projects Done</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative me-lg-4">
+                        <img class="img-fluid w-100" src="img/feature.jpg" alt="">
+                        <span class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block" style="width: 120px; height: 120px;"></span>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="fw-medium text-uppercase text-primary mb-2">Why Choose Us!</p>
+                    <h1 class="display-5 mb-4">Few Reasons Why People Choose Amar Lighting Equipment</h1>
+                    <p class="mb-4">Customer satisfaction is everything for us. We never compromise with our quality as we use only branded parts & electrical components in our machines.</p>
+                    <div class="row gy-4">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h4>Innovation in Machines</h4>
+                                    <span>Our work quality speaks for itself. We continuously innovate to provide the best lighting solutions for our clients.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h4>On-Time Delivery</h4>
+                                    <span>We understand the importance of timely deliveries and ensure that all our products reach you when promised.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <h4>Excellent After-Sales Service</h4>
+                                    <span>Our relationship with clients doesn't end with a sale. We provide comprehensive after-sales support to ensure your equipment runs efficiently.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Product Categories Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fw-medium text-uppercase text-primary mb-2">Our Products</p>
+                <h1 class="display-5 mb-4">Portable Lighting Solutions</h1>
+            </div>
+            <div class="row g-4">
+                <!-- Tower Light -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-category-card">
+                        <img src="img/product-images/pelican-remote-area-lighting-system.png" alt="Tower Light">
+                        <div class="product-category-content">
+                            <h4>Tower Light</h4>
+                            <p>Compact portable lighting solutions for remote areas and emergency situations.</p>
+                            <a href="products-pelican.html" class="btn btn-primary btn-sm">View Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Light Towers -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-category-card">
+                        <img src="img/product-images/9-mtr-mobile-lighting-tower.png" alt="Mobile Light Towers">
+                        <div class="product-category-content">
+                            <h4>Mobile Light Towers</h4>
+                            <p>Powerful trailer-mounted lighting towers for construction and events.</p>
+                            <a href="products-mobile.html" class="btn btn-primary btn-sm">View Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Inflatable Tower Light -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-category-card">
+                        <img src="img/product-images/inflatable-balloon-tower-light.png" alt="Inflatable Tower Light">
+                        <div class="product-category-content">
+                            <h4>Inflatable Tower Light</h4>
+                            <p>Rapidly deployable lighting solutions for emergency response.</p>
+                            <a href="products-inflatable.html" class="btn btn-primary btn-sm">View Products</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Solar Lights -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="product-category-card">
+                        <img src="img/product-images/portable-pneumatic-lighting-system.png" alt="Solar Lights">
+                        <div class="product-category-content">
+                            <h4>Solar Lights</h4>
+                            <p>Eco-friendly, solar-powered lighting solutions with zero emissions.</p>
+                            <a href="products-solar.html" class="btn btn-primary btn-sm">View Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Categories End -->
+
+
+    <!-- Project Start -->
+    <div class="container-fluid bg-dark pt-5 my-5 px-0">
+        <div class="text-center mx-auto mt-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="fw-medium text-uppercase text-primary mb-2">Our Applications</p>
+            <h1 class="display-5 text-white mb-5">Industries We Serve</h1>
+        </div>
+        <div class="owl-carousel project-carousel wow fadeIn" data-wow-delay="0.1s">
+            <a class="project-item" href="construction.html">
+                <img class="img-fluid" src="img/project-1.jpg" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Construction Sites</h5>
+                </div>
+            </a>
+            <a class="project-item" href="mining.html">
+                <img class="img-fluid" src="img/project-2.jpg" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Mining Sites</h5>
+                </div>
+            </a>
+            <a class="project-item" href="oil-gas.html">
+                <img class="img-fluid" src="img/project-3.jpg" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Oil & Gas Industry</h5>
+                </div>
+            </a>
+            <a class="project-item" href="military.html">
+                <img class="img-fluid" src="img/project-4.jpg" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Military & Defense</h5>
+                </div>
+            </a>
+            <a class="project-item" href="emergency.html">
+                <img class="img-fluid" src="img/project-5.jpg" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Emergency & Disaster Relief</h5>
+                </div>
+            </a>
+            <a class="project-item" href="events.html">
+                <img class="img-fluid" src="img/project-6.jpg" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Events & Film Shootings</h5>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Project End -->
+
+
+    <!-- Featured Products Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fw-medium text-uppercase text-primary mb-2">Our Products</p>
+                <h1 class="display-5 mb-5">Featured Lighting Solutions</h1>
+            </div>
+            <div class="owl-carousel featured-product-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Featured Product 1 -->
+                <div class="featured-product-item">
+                    <div class="featured-product-img">
+                        <img src="img/product-images/pelican-remote-area-lighting-system.png" alt="Pelican Remote Area Lighting System">
+                    </div>
+                    <div class="featured-product-info">
+                        <h5>Pelican Remote Area Lighting System</h5>
+                        <span class="model">Model: RALS-01</span>
+                        <p>Powerful illumination with long battery life. Perfect for emergency services and remote operations.</p>
+                        <a href="products-pelican.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Featured Product 2 -->
+                <div class="featured-product-item">
+                    <div class="featured-product-img">
+                        <img src="img/product-images/portable-pneumatic-lighting-system.png" alt="Portable Pneumatic Lighting System">
+                    </div>
+                    <div class="featured-product-info">
+                        <h5>Portable Pneumatic Lighting System</h5>
+                        <span class="model">Model: PPLS-01</span>
+                        <p>Lightweight and flexible lighting solution with natural white illumination for various applications.</p>
+                        <a href="products-solar.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Featured Product 3 -->
+                <div class="featured-product-item">
+                    <div class="featured-product-img">
+                        <img src="img/product-images/solar-mobile-lighting-tower.png" alt="Solar Mobile Lighting Tower">
+                    </div>
+                    <div class="featured-product-info">
+                        <h5>Solar Mobile Lighting Tower</h5>
+                        <span class="model">Model: SMLT-01</span>
+                        <p>Eco-friendly lighting solution that utilizes solar energy for outdoor applications with zero emissions.</p>
+                        <a href="products-solar.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Featured Product 4 -->
+                <div class="featured-product-item">
+                    <div class="featured-product-img">
+                        <img src="img/product-images/9-mtr-mobile-lighting-tower.png" alt="9 Mtr. Mobile Lighting Tower">
+                    </div>
+                    <div class="featured-product-info">
+                        <h5>9 Mtr. Mobile Lighting Tower</h5>
+                        <span class="model">Model: MLT-9</span>
+                        <p>Powerful mobile lighting tower with water-cooled engine for outdoor construction and mining sites.</p>
+                        <a href="products-mobile.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+                
+                <!-- Featured Product 5 -->
+                <div class="featured-product-item">
+                    <div class="featured-product-img">
+                        <img src="img/product-images/inflatable-balloon-tower-light.png" alt="Inflatable Balloon Tower Light">
+                    </div>
+                    <div class="featured-product-info">
+                        <h5>Inflatable Balloon Tower Light</h5>
+                        <span class="model">Model: IBTL-01</span>
+                        <p>Rapidly deployable lighting with a tall, flexible structure and vibrant illumination for events and emergencies.</p>
+                        <a href="products-inflatable.html" class="btn btn-primary btn-sm">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featured Products End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fw-medium text-uppercase text-primary mb-2">Testimonial</p>
+                <h1 class="display-5 mb-5">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>Amar Lighting towers have been a game-changer for our construction site. The 9m mobile lighting tower provides excellent illumination for night shifts, helping us maintain productivity around the clock.</p>
+                        <h5 class="mb-1">Rajesh Kumar</h5>
+                        <span class="fst-italic">Construction Project Manager</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>We've been using Amar's Solar Mobile Lighting Towers for our film shoots and the results have been fantastic. Reliable, portable, and eco-friendly - exactly what we were looking for.</p>
+                        <h5 class="mb-1">Priya Sharma</h5>
+                        <span class="fst-italic">Production Manager</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-img position-relative">
+                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
+                        <div class="btn-square bg-primary rounded-circle">
+                            <i class="fa fa-quote-left text-white"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-text text-center rounded p-4">
+                        <p>During emergency rescue operations after the floods, Amar's portable lighting systems were indispensable. Their after-sales support was excellent, with prompt service whenever required.</p>
+                        <h5 class="mb-1">Sunil Patel</h5>
+                        <span class="fst-italic">Disaster Management Officer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Plot No. 443, Vidyadevi Road, Jandhera Samaspur, Delhi Road, Saharanpur - (U.P.) INDIA 247451</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 8650540118 | +91 9634481386</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>amarlightingequipments@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="products.html">Our Products</a>
+                    <a class="btn btn-link" href="#">Terms & Condition</a>
+                    <a class="btn btn-link" href="contact.html#support">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Products</h5>
+                    <a class="btn btn-link" href="products-pelican.html">Tower Light</a>
+                    <a class="btn btn-link" href="products-inflatable.html">Inflatable Emergency Lighting</a>
+                    <a class="btn btn-link" href="products-pneumatic.html">Pneumatic Lighting System</a>
+                    <a class="btn btn-link" href="products-mobile.html">Mobile Lighting Towers</a>
+                    <a class="btn btn-link" href="products-solar.html">Solar Lighting Solutions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container text-center">
+            <p class="mb-2">Copyright &copy; <a class="fw-semi-bold" href="#">Amar Lighting Equipment</a>, All Right Reserved.</p>
+            <p class="mb-0">GSTIN: 09ACIFA1572B1ZP</p>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+    <!-- Custom Javascript for Featured Products Carousel -->
+    <script>
+        $(document).ready(function() {
+            // Initialize the featured product carousel
+            $(".featured-product-carousel").owlCarousel({
+                autoplay: true,
+                smartSpeed: 1000,
+                margin: 25,
+                loop: true,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
